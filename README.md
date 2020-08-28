@@ -39,7 +39,7 @@ If you set the entries to a negative number, there won't be any limit on the num
 This shortcode is written in JavaScript as to not use extra server performance, but it could slow down your visitors' PCs if too many episodes are loaded.
 ### Embed YouTube playlist - \[youtube-playlist id entries *cols\]
 Create a grid of videos from a YouTube playlist.
-To use this shortcode you will need a YouTube API key. See https://developers.google.com/youtube/registering_an_application for more information.
+To use this shortcode you will need a YouTube API key. See https://developers.google.com/youtube/registering_an_application for more information. After obtaining the key, the value must be updated in "/js/embed-youtube-playlist.js"
 ```
 [youtube-playlist id="PL02HDVnTgIcqlWlZxvcJzWsMjxNPChGLf" entries="6" cols="3"]
 ```
