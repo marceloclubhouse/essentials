@@ -31,7 +31,7 @@ function generateYouTubeplaylist(playlist_id, max_entries, cols=3)
     let xmlhttp = new XMLHttpRequest();
     // You'll probably want to replace the API key with something
     // other than the default Essentials key.
-    const YOUTUBE_API_KEY = "AIzaSyANRnoeRowjfQkhnQsd9tpJ5B-4lFUnFoE";
+    const YOUTUBE_API_KEY = "ENTER_API_KEY_HERE";
     const PLAYLIST_ID = playlist_id;
     const MAX_ENTRIES = max_entries;
     const URL = `https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=${MAX_ENTRIES}&playlistId=${PLAYLIST_ID}&key=${YOUTUBE_API_KEY}`;
