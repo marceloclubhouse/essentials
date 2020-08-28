@@ -1,0 +1,71 @@
+/*
+ *  Essentials WordPress Plugin
+ *  by Marcelo Cubillos
+ *  https://marcelocubillos.com/wordpress-essentials/
+ *
+ *  embed-youtube-playlist.css - Embed a YouTube playlist in your site.
+ *
+ *  Revisions:
+ *      - 2020/08/28 : Initial revision
+ *
+ *  This is provided under the MIT license. See LICENSE.txt
+ *  for more information.
+ */
+
+@media only screen and (max-width: 1000px) {
+
+    .youtube-playlist-table {
+        width:100%;
+    }
+
+    .youtube-video {
+        display: block;
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .youtube-video-thumbnail {
+        width: 100%;
+    }
+
+    .youtube-video-title {
+        font-size: 30px !important;
+        margin-bottom: 30px;
+        height: auto !important;
+    }
+
+    .youtube-video-description {
+        height: auto !important;
+    }
+
+}
+
+.youtube-playlist-table {
+    table-layout: fixed;
+}
+
+.youtube-video-title {
+    font-size: 18px !important;
+    text-align: left;
+    margin-top: 30px !important;
+    height: 50px;
+}
+
+.youtube-video-thumbnail {
+    display: block;
+    margin: auto;
+}
+
+.youtube-video-description {
+    font-size: 15px;
+    height: 200px;
+    text-align: left;
+}
+
+.youtube-video {
+    padding: 10px !important;
+}
+
+.youtube-playlist-table,.youtube-playlist-table > tbody,.youtube-video {
+    border: 0;
+}

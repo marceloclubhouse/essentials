@@ -1,0 +1,42 @@
+/*
+ *  Essentials WordPress Plugin
+ *  by Marcelo Cubillos
+ *  https://marcelocubillos.com/wordpress-essentials/
+ *
+ *  embed-libsyn.css - Embed a Libsyn podcast feed in your site.
+ *
+ *  Revisions:
+ *      - 2020/08/27 : Initial revision
+ *
+ *  This is provided under the MIT license. See LICENSE.txt
+ *  for more information.
+ */
+
+@media only screen and (max-width: 1000px) {
+    .podcast-episode-image {
+        width: 100% !important;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .podcast-episode-date {
+        margin-top: 10px !important;
+    }
+}
+
+.podcast-episode {
+    min-height: 260px;
+}
+
+.podcast-episode-title {
+    font-size: 22px;
+    height: auto;
+}
+
+.podcast-episode-description {
+    margin-top: 12px;
+}
+
+.podcast-episode-image {
+    margin-right: 20px;
+}
