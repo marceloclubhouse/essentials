@@ -56,7 +56,7 @@ function generateYouTubeplaylist(playlist_id, max_entries, cols=3)
 
         @return {null}
         */
-        let html = `<table id="youtube-playlist-table" style="width: 100%;"><tbody>`;
+        let html = `<table class="youtube-playlist-table" style="width: 100%;"><tbody>`;
         // If the resolution of the images are unsatisfactory, the quality can
         // be changed per the API guidelines:
         // https://developers.google.com/youtube/v3/docs/thumbnails

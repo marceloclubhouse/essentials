@@ -2,7 +2,7 @@
 
 /*
 Plugin Name: Essentials
-Plugin URI: https://github.com/marceloclubhouse/wordpress-essentials
+Plugin URI: https://marcelocubillos.com/wordpress-essentials/
 description: A lightweight plugin to expand WordPress' functionality
 Version: 0.1.0
 Author: Marcelo Cubillos
