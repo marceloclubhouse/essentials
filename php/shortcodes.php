@@ -14,7 +14,7 @@
  *  for more information.
  */
 
-function essentials_year( $atts )
+function essentialsYear( $atts )
 {
     /*
     * Display the current year.
@@ -22,14 +22,14 @@ function essentials_year( $atts )
     */
     return date('Y');
 }
-add_shortcode( 'year', 'essentials_year' );
+add_shortcode( 'year', 'essentialsYear' );
 
 
-function essentials_iframe( $atts )
+function essentialsIframe( $atts )
 {
     /*
      * Enable iframe embeds
-     * [iframe src *width *height]
+     * Shortcode: [iframe src *width *height]
      *
      * src - The URL of the page the iframe will pull
      * width - The width of the iframe box
@@ -42,10 +42,10 @@ function essentials_iframe( $atts )
     return "<iframe border='0' class='shortcode-iframe'
             src='{$atts['src']}' width='{$atts['width']}' height='{$atts['height']}'></iframe>";
 }
-add_shortcode('iframe', 'essentials_iframe');
+add_shortcode('iframe', 'essentialsIframe');
 
 
-function essentials_libsyn( $atts )
+function essentialsLibsyn( $atts )
 {
     /*
      * Enable Libsyn podcast embedding
@@ -58,10 +58,10 @@ function essentials_libsyn( $atts )
     return "<div id='podcast-{$atts['id']}' class='podcast-feed'></div>
             <script>generateLibsynPodcast('{$atts['id']}', {$atts['entries']});</script>";
 }
-add_shortcode('libsyn', 'essentials_libsyn');
+add_shortcode('libsyn', 'essentialsLibsyn');
 
 
-function essentials_youtube_playlist ( $atts )
+function essentialsYoutubePlaylist ( $atts )
 {
     /* Enable embedding YouTube playlists
      * Shortcode: [youtube-playlist id entries *cols]
@@ -80,10 +80,10 @@ function essentials_youtube_playlist ( $atts )
             <style>.youtube-video { width: calc(1/${atts['cols']}*100%); }</style>
             <script>generateYouTubeplaylist('{$atts['id']}', {$atts['entries']}, {$atts['cols']});</script>";
 }
-add_shortcode('youtube-playlist', 'essentials_youtube_playlist');
+add_shortcode('youtube-playlist', 'essentialsYoutubePlaylist');
 
 
-function essentials_back( $atts )
+function essentialsBack( $atts )
 {
     /* Enable a link to go back one page
      * Shortcode: [back text]
@@ -92,4 +92,4 @@ function essentials_back( $atts )
      */
     return '<a onclick="javascript:history.back()" href="#">' . $atts['text'] . '</a>';
 }
-add_shortcode('back', 'essentials_back');
+add_shortcode('back', 'essentialsBack');

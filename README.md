@@ -16,11 +16,11 @@ Copyright &copy; [year] My Organization
 ### iFrame - \[iframe src *width *height\]
 Enables iframe embeds anywhere within WordPress content.
 ```
-[iframe src="//marcelocubillos.com"]
+[iframe src="https://marcelocubillos.com"]
 ```
 Without specifying a width or height, the iframe defaults to a width and height of 400px. Otherwise, you can specify width and height.
 ```
-[iframe src="//marcelocubillos.com" width="1000px" height="500px"]
+[iframe src="https://marcelocubillos.com" width="1000px" height="500px"]
 ```
 ### Go-Back Link - \[back text\]
 Creates an anchor that when clicked, has the same effect as a user clicking the back button in their web browser. This is useful if you have a 404 page and want to encourage your visitor to go back a page.
