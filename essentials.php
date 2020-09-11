@@ -4,7 +4,7 @@
 Plugin Name: Essentials
 Plugin URI: https://marcelocubillos.com/wordpress-essentials/
 description: A lightweight plugin to expand WordPress' functionality
-Version: 0.1.4
+Version: 0.1.5
 Author: Marcelo Cubillos
 Author URI: https://marcelocubillos.com/
 License: MIT
