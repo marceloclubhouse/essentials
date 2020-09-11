@@ -39,7 +39,7 @@ function essentialsIframe( $atts )
     if (!$atts['width']) { $atts['width'] = 400; }
     if (!$atts['height']) { $atts['height'] = 400; }
 
-    return "<iframe border='0' class='shortcode-iframe'
+    return "<iframe frameBorder='0' class='essentials-iframe'
             src='{$atts['src']}' width='{$atts['width']}' height='{$atts['height']}'></iframe>";
 }
 add_shortcode('iframe', 'essentialsIframe');
