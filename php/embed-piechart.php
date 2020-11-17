@@ -29,14 +29,14 @@ function essentialsGeneratePiechartJS($title, $chart_data, $display_title)
      *                     will display the title by default.
      */
 
+    // Create an HTML-friendly title that can be used to address
+    // the generated pie chart.
+    $html_friendly_title = str_replace(' ', '', strtolower($title));
+
     if ($display_title == "false")
     {
         $title = "";
     }
-
-    // Create an HTML-friendly title that can be used to address
-    // the generated pie chart.
-    $html_friendly_title = str_replace(' ', '', strtolower($title));
 
     $piechart_js = "
     // Load the Google Charts API, required for any of the generation
