@@ -92,13 +92,13 @@ function essentialsPieChart ( $atts )
 {
     /* Enable generating and embedding pie charts using Google's
      * pie chart system.
-     * Shortcode: [google-pie-chart title data *width *height]
+     * Shortcode: [google-pie-chart title data *width *height *display_title]
      *
-     * title - The title of the pie chart
-     * data - The data to generate the chart using the format
-     * "name:value" (e.g. "Art:6,Dance:7")
-     * width - Optional parameter to specify the width of the chart
-     * height - Optional parameter to specify the height of the chart
+     * title   - The title of the pie chart
+     * data    - The data to generate the chart using the format
+     *           "name:value" (e.g. "Art:6,Dance:7")
+     * *width  - Optional parameter to specify the width of the chart
+     * *height - Optional parameter to specify the height of the chart
      */
 
     // If width and height aren't provided then default to 900x500.
@@ -109,7 +109,7 @@ function essentialsPieChart ( $atts )
     // the generated pie chart.
     $html_friendly_title = str_replace(' ', '', strtolower($atts['title']));
 
-    $piechart_script = essentialsGeneratePiechartJS($atts['title'], $atts['data']);
+    $piechart_script = essentialsGeneratePiechartJS($atts['title'], $atts['data'], $atts['display_title']);
 
     return "<div id='piechart{$html_friendly_title}' style=\"width: {$atts['width']}px; height: {$atts['height']}px;\"></div>
             <script>{$piechart_script}</script>";

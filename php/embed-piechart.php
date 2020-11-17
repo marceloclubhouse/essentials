@@ -14,13 +14,25 @@
  *  for more information.
  */
 
-function essentialsGeneratePiechartJS($title, $chart_data)
+function essentialsGeneratePiechartJS($title, $chart_data, $display_title)
 {
     /*
      * Given a title and piechart data, return a Javascript
      * function enclosed in a string that can generate
      * and display a pie chart.
+     *
+     * $title           -> The title of the pie chart
+     * $chart_data      -> The data of the piechart as a string
+     * $display_title   -> An optional "boolean" string specifying whether
+     *                     or not the chart should display its title. If
+     *                     this variable isn't specified, this function
+     *                     will display the title by default.
      */
+
+    if ($display_title == "false")
+    {
+        $title = "";
+    }
 
     // Create an HTML-friendly title that can be used to address
     // the generated pie chart.
