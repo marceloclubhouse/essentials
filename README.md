@@ -13,6 +13,7 @@ This plugin automatically scans pages for "\&gt;" and forces them to become ">",
 * Go-Back Link
 * Embed Libsyn Podcast
 * Embed YouTube Playlist
+* Generate Google Pie Chart
 * Create Top Banner
 ### Current Year - \[year\]
 If you have a copyright clause anywhere in your website, you can add
@@ -50,6 +51,16 @@ To use this shortcode you will need a YouTube API key. See https://developers.go
 [youtube-playlist id="PL02HDVnTgIcqlWlZxvcJzWsMjxNPChGLf" entries="6" cols="3"]
 ```
 Max specifies the max number of videos to display, and cols specifies the number of columns to display. If nothing is specified for cols then the table will default to 3 columns.
+### Generate Google Pie Chart - \[google-pie-chart title data *width *height *display-title\]
+Using this shortcode, you can generate and display a pie chart with parameters specified in the shortcode.
+
+The data parameter of the shortcode follows the format "FirstCategory:Number,SecondCategory:Number", where each category is the name of the category, and the number represents the number of items in that category. For instance, a valid shortcode may look like:
+```
+[google-pie-chart title="What My Fancy Breakfasts Usually Consist Of" data="Bacon:4,Eggs:2,Oranges:1,Biscuits:2"]
+```
+You can specify the width and height of the shortcode using [google-pie-chart width="x" height="y"] where x and y are valid integers, though if they're not specified the pie chart will default to 900x500px.
+
+You can also specify whether or not to include a title by including "display-title='false'" in the shortcode. If this parameter isn't specified, the title will be displayed by default.
 ### Create Top Banner - \[top-banner content *link *link_name *color]
 Create a banner at the top of a site with an optional right-hand link (see https://dev.marcelocubillos.com/ for an example).
 Colors are specified in the same syntax as CSS.
