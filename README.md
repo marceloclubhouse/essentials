@@ -5,8 +5,8 @@ A live demo is available at https://marcelocubillos.com/wordpress-essentials/
 ## Passive Features
 * Fix Broken Custom CSS
 ### Fix Broken CSS
-One of the issues that WordPress sites experience sometimes is that custom CSS doesn't save properly. As a result, some calls like "#body > div" turn into "#body &gt; div" and web browsers fail to parse the call, leading to broken CSS.
-This plugin automatically scans pages for "&gt;" and forces them to become ">", so web browsers are able to render the CSS.
+One of the issues that WordPress sites experience sometimes is that custom CSS doesn't save properly. As a result, some calls like "#body > div" turn into "#body \&gt; div" and web browsers fail to parse the call, leading to broken CSS.
+This plugin automatically scans pages for "\&gt;" and forces them to become ">", so web browsers are able to render the CSS.
 ## Shortcodes
 * Current Year
 * iFrame
