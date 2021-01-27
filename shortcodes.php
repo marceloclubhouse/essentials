@@ -153,4 +153,4 @@ function essentialsTopBanner ( $atts ) {
 
     return "<script>generateBanner('{$atts['content']}', '{$atts['link']}', '{$atts['link_name']}', '{$atts['color']}');</script>";
 }
-add_shortcode('top_banner', 'essentialsTopBanner');
+add_shortcode('top-banner', 'essentialsTopBanner');
