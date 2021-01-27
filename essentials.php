@@ -3,7 +3,7 @@
 /*
 Plugin Name: Essentials
 Plugin URI: https://marcelocubillos.com/wordpress-essentials/
-description: A lightweight plugin to expand WordPress' functionality
+description: A lightweight, multi-purpose plugin that adds essential features to WordPress
 Version: 0.2.0
 Author: Marcelo Cubillos
 Author URI: https://marcelocubillos.com/

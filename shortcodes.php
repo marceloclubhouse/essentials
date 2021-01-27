@@ -113,7 +113,7 @@ function essentialsPieChart ( $atts )
 
     $piechart_script = essentialsGeneratePiechartJS($atts['title'], $atts['data'], $atts['display-title']);
 
-    return "<div id='piechart{$html_friendly_title}' style=\"width: {$atts['width']}px; height: {$atts['height']}px;\"></div>
+    return "<div id='piechart{$html_friendly_title}' class='google-pie-chart' style=\"width: {$atts['width']}px; height: {$atts['height']}px;\"></div>
             <script>{$piechart_script}</script>";
 }
 add_shortcode('google-pie-chart', 'essentialsPieChart');
@@ -121,7 +121,7 @@ add_shortcode('google-pie-chart', 'essentialsPieChart');
 
 function essentialsBack( $atts )
 {
-    /* Enable a link to go back one page
+    /* Create a link to go back one page
      * Shortcode: [back text]
      *
      * text - The text used in the link
@@ -129,3 +129,28 @@ function essentialsBack( $atts )
     return '<a onclick="javascript:history.back()" href="#">' . $atts['text'] . '</a>';
 }
 add_shortcode('back', 'essentialsBack');
+
+
+function essentialsTopBanner ( $atts ) {
+    /* Create a banner on the top of a web page
+     * Shortcode: [top_banner content link link_name color]
+     *
+     * content    - The HTML content to include in the banner
+     * *link      - Optional link to include in the right of the banner
+     * *link_name - Optional name of the link to include
+     * *color     - Optional CSS color for the banner background
+     */
+
+    // If no link or link name are specified then default them to "null"
+    if (!$atts['link']) { $atts['link'] = "null"; }
+    if (!$atts['link_name']) { $atts['link_name'] = "null"; }
+
+    // Prevent "'" character from breaking the generateBanner() call
+    $atts['content'] = str_replace("'", "\'", $atts['content']);
+    $atts['link'] = str_replace("'", "\'", $atts['link']);
+    $atts['link_name'] = str_replace("'", "\'", $atts['link_name']);
+    $atts['color'] = str_replace("'", "\'", $atts['color']);
+
+    return "<script>generateBanner('{$atts['content']}', '{$atts['link']}', '{$atts['link_name']}', '{$atts['color']}');</script>";
+}
+add_shortcode('top_banner', 'essentialsTopBanner');

@@ -21,7 +21,7 @@ include 'php/embed-piechart.php';
 // Include API keys
 include 'php/keys/YOUTUBE_API.php';
 
-
+// Include scripts and styles
 function essentialsIncludeLibsyn() {
     /* Include scripts and styles for Libsyn podcast feeds */
     wp_enqueue_script( 'essentials-libsyn', plugins_url( '/js/embed-libsyn.js', __FILE__ ));
@@ -40,15 +40,26 @@ add_action('wp_enqueue_scripts', 'essentialsIncludeYoutubePlaylist');
 
 function essentialsIncludeGooglePieChart() {
     /* Include scripts for generating and displaying Google Pie Charts */
+
     // GStatic chart needs to be loaded in the header
-    wp_enqueue_script( 'gstatic-chart-loader', 'https://www.gstatic.com/charts/loader.js');
+    wp_enqueue_script( 'gstatic-chart-loader', plugins_url( '/js/loader.js', __FILE__ )); // GStatic loader
+
 }
 add_action('wp_enqueue_scripts', 'essentialsIncludeGooglePieChart');
 
 
 function essentialsIncludeCSSFix() {
-    /* Include scripts for fixing faulty custom CSS within WordPress' Custom CSS system */
+    /* Include scripts for fixing faulty custom CSS */
+
     // Fix CSS script must be queued in the footer
     wp_enqueue_script( 'essentials-css-fix', plugins_url( '/js/fix-css.js', __FILE__), false, false, true);
 }
 add_action('wp_enqueue_scripts', 'essentialsIncludeCSSFix');
+
+
+function essentialsIncludeTopBanner() {
+    /* Include scripts for fixing faulty custom CSS within WordPress' Custom CSS system */
+    wp_enqueue_script( 'essentials-top-banner', plugins_url( '/js/top-banner.js', __FILE__));
+    wp_enqueue_style( 'essentials-top-banner', plugins_url( '/css/top-banner.css', __FILE__ ));
+}
+add_action('wp_enqueue_scripts', 'essentialsIncludeTopBanner');

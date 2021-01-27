@@ -1,0 +1,43 @@
+/*
+ *  Essentials WordPress Plugin
+ *  by Marcelo Cubillos
+ *  https://marcelocubillos.com/wordpress-essentials/
+ *
+ *  top-banner.css - Create a banner at the top of a web page
+ *
+ *  Revisions:
+ *      - 2021/01/26 : Initial revision
+ *
+ *  This is provided under the MIT license. See LICENSE.txt
+ *  for more information.
+ */
+
+#top-banner > table {
+    margin-bottom: 0;
+    width: 100%;
+}
+
+#top-banner-content {
+    text-align: center;
+    color: white;
+    width: 100%;
+    margin: 2px;
+}
+
+#top-banner-link > a {
+    color: white;
+    text-decoration: none;
+}
+
+#top-banner-link > a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#top-banner-link {
+    vertical-align: middle;
+    text-align: center;
+    white-space:nowrap;
+    position: absolute;
+    right: 10px;
+}

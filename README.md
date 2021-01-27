@@ -1,5 +1,5 @@
 # Essentials
-### A lightweight, multi-purpose plugin to accelerate WordPress and make content management easier
+### A lightweight, multi-purpose plugin that adds essential features to WordPress
 Essentials is an open-source WordPress plugin designed to deliver several general features without compromising usability.
 A live demo is available at https://marcelocubillos.com/wordpress-essentials/
 ## Shortcodes

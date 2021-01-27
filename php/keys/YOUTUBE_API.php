@@ -14,4 +14,4 @@
  */
 
 // Global constant Youtube API key
-define("YOUTUBE_API_KEY", "ADD YOUR KEY HERE");
+define("YOUTUBE_API_KEY", "YOUR_KEY_HERE");
